@@ -1,45 +1,54 @@
-# Antonino Perricone's extension for visual studio code about Harbour and xHarbour programming languages
+# 🚀 harbour-minigui-doc-extension
 
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LHCBE7ERSSVDJ&source=url)
-[![Version](https://vsmarketplacebadges.dev/version-short/aperricone.harbour.svg)](https://marketplace.visualstudio.com/items?itemName=aperricone.harbour)
-[![Installs](https://vsmarketplacebadges.dev/installs-short/aperricone.harbour.svg)](https://marketplace.visualstudio.com/items?itemName=aperricone.harbour)
-[![Ratings](https://vsmarketplacebadges.dev/rating-short/aperricone.harbour.svg)](https://marketplace.visualstudio.com/items?itemName=aperricone.harbour)
+🌐 **Select Language:** 
+[![English](https://shields.io)](#) · [![Español](https://shields.io)](README.es.md)
 
-do you like this extension? Help me to make it better with a donation, click the first button.
+---
 
-## Features
+An enhanced **Visual Studio Code** extension that improves support for the **Harbour** and **xHarbour** programming languages, originally based on the excellent work by Antonino Perricone (`harbourCodeExtension`).
 
-- [syntax hightlight](https://github.com/APerricone/harbourCodeExtension/wiki/Syntax-hightlight), with [Edgard Lorraine Messias](https://github.com/edgardmessias)
-- [Debug support](https://github.com/APerricone/harbourCodeExtension/wiki/Debugger)
-- [Diagnostic infos](https://github.com/APerricone/harbourCodeExtension/wiki/Diagnostics-Lint)
-- Symbol Definitions Within a Document provider (access it by pressing <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>O</kbd> or <kbd>CTRL</kbd>+<kbd>P</kbd> then <kbd>@</kbd>)
-- Symbol Definitions in workspace provider (access it by pressing <kbd>CTRL</kbd>+<kbd>T</kbd> or <kbd>CTRL</kbd>+<kbd>P</kbd> then <kbd>#</kbd>)
+---
 
-## Documentation links
-See the [wiki](https://github.com/APerricone/harbourCodeExtension/wiki) for more information.
-An introdution for harbour developers can be found in these articles:
-- [Harbour Wiki - Developing and Debugging Harbour Programs with VSCODE](https://harbour.wiki/index.asp?page=PublicArticles&mode=show&id=190401174818&sig=6893630672) by Eric Lendvai
-- [Harbour magazine - Visual Studio Code for Harbour](https://medium.com/harbour-magazine/visual-studio-code-for-harbour-e148f9c1861a) by José Luis Sánchez ([available in spanish too](https://medium.com/harbour-magazine/visual-studio-code-para-harbour-85b0646ff312))
+## ✨ Main Features
 
-## Requirements
-Sometime is necessary to set `harbour.compilerExecutable` with complete path.
+### 🌟 Newly Added Features
+* **MiniGUI Extended Support:** Autocomplete, syntax highlighting, and specific tools for development with the MiniGUI Extended graphical library.
+* **harbour-doc Documentation System:** Full support and formatting for documentation comments in the `harbour-doc` style (fully compatible with the **Javadoc** format).
 
-## Extension Settings
-This extension contributes the following settings:
+### 🛠️ Features Inherited from the Original Extension
+* **Syntax Highlighting:** Robust configuration in collaboration with Edgard Lorraine Messias.
+* **Debug Support:** Tools to debug your code directly.
+* **Diagnostic Info:** Real-time error validation.
+* **Document Symbol Provider:** Quick access by pressing `CTRL + SHIFT + O` (or `CTRL + P` then `@`).
+* **Workspace Symbol Provider:** Global access by pressing `CTRL + T` (or `CTRL + P` then `#`).
 
-* `harbour.validating`: enable/disable the validation every open and save of harbour files.
-* `harbour.compilerExecutable`: sometime is necessary to set the path of the harbour executable to make validation works.
-* `harbour.extraIncludePaths`: add path where found the includes to avoid "file not found" error.
-* `harbour.extraOptions`: other options to pass to harbour compiler.
-* `harbour.warningLevel`: sets the warning level for validation.
-* `harbour.decorator`: if true enables the feature of decoration of correspondents if/endif, for/next, while/endwhile, etc etc
+---
 
-## How to use the debugger<a name="DEBUG"></a>
-You can use the command "Harbour: Get debugger code" to get the source of the debbugger, save it to a file naming it as you like, for example dbg_lib-prg. You can include this file in your project or **BETTER** create a library with this file to link in your project.
+## ⚙️ Extension Settings
 
-> NOTE: don't forget to compile harbour file with debug information ***-b***
+This extension contributes the following settings to VS Code:
 
-### **IT IS STRONGLY RECOMMENDED TO UPDATE THE FILES EVERY EXTENSION VERSION**
+* `harbour.validating`: Enable/disable validation every time you open or save Harbour files.
+* `harbour.compilerExecutable`: Full path to the Harbour compiler executable (necessary if automatic validation fails).
+* `harbour.extraIncludePaths`: Additional paths to look for header files (`.ch` / `.h`) to avoid file not found errors.
+* `harbour.extraOptions`: Extra parameters or options to pass directly to the Harbour compiler.
+* `harbour.warningLevel`: Sets the warning level for code validation.
+* `harbour.decorator`: If set to `true`, enables visual decoration of corresponding blocks (`if/endif`, `for/next`, `while/endwhile`, etc.).
 
-## Known Issues
+---
 
+## 🐞 How to Use the Debugger?
+
+You can run the **"Harbour: Get debugger code"** command to get the debugger source code. Save the output to a file (for example, `dbg_lib.prg`). 
+* You can include this file directly in your project.
+* **RECOMMENDED:** Compile this file as an external library and link it in your project configuration files.
+
+> ⚠️ **Important Note:** Always remember to compile your Harbour files using the `-b` parameter to include debugging information.
+
+---
+
+## 📜 Credits, License, and Acknowledgments
+
+This project is distributed under the **MIT License**. 
+
+This extension is an enhanced fork that extends the original code created by **Antonino Perricone** (`APerricone/harbourCodeExtension`). We greatly appreciate his initial contribution and that of all the collaborators of the base project.
