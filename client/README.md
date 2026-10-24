@@ -1,7 +1,6 @@
 # 🚀 harbour-minigui-doc-extension
 
-🌐 **Select Language:** 
-[![English](https://shields.io)](#) · [![Español](https://shields.io)](README.es.md)
+🌐 <b>Select Language:</b> 🇺🇸 <b>English</b> · 🇪🇸 <a href="README.es.md">Español</a>
 
 ---
 
